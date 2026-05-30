@@ -7,30 +7,30 @@ configurable speed and error injection.
 
 ## Build
 
-\```bash
-git clone https://github.com/youruser/htype
+```bash
+git clone https://github.com/lord-of-the-strings/htype
 cd htype
 make
-\```
+```
 
 ## Install
 
-\```bash
-sudo make install
-\```
+```bash
+make install
+```
 
 Installs to `/usr/local/bin/htype` and `/usr/local/share/man/man1/htype.1`.
 Override prefix:
 
-\```bash
+```bash
 make install PREFIX=~/.local
-\```
+```
 
 ## Usage
 
-\```
+```
 htype [--wpm N] [--error-rate F]
-\```
+```
 
 | Flag | Default | Description |
 |------|---------|-------------|
@@ -39,13 +39,13 @@ htype [--wpm N] [--error-rate F]
 
 ## Examples
 
-\```bash
+```bash
 echo "hello world" | htype --wpm 80
 
 cat essay.txt | htype --wpm 120 --error-rate 0.05
 
 cat script.txt | htype --wpm 100 | tee output.txt
-\```
+```
 
 ## Stages
 
