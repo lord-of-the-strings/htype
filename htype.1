@@ -1,0 +1,54 @@
+.TH HTYPE 1 "2025" "htype 0.1.0" "User Commands"
+.SH NAME
+htype \- mimic human typing on stdout
+.SH SYNOPSIS
+.B htype
+.RB [ \-\-wpm
+.IR N ]
+.RB [ \-\-error\-rate
+.IR F ]
+.SH DESCRIPTION
+.B htype
+reads from stdin and writes to stdout one character at a time,
+sleeping between each keystroke to simulate human typing speed.
+Errors are injected randomly based on a QWERTY adjacency map and
+immediately corrected with a backspace sequence.
+.SH OPTIONS
+.TP
+.BI \-\-wpm " N"
+Typing speed in words per minute. One word is 5 characters.
+Default is 120. Must be a positive integer.
+.TP
+.BI \-\-error\-rate " F"
+Probability of a mistype on any given letter, from 0.0 to 1.0.
+Default is 0.0. Errors are corrected immediately.
+.SH EXAMPLES
+.TP
+Echo a string at 80 wpm:
+.RS
+.EX
+echo "hello world" | htype --wpm 80
+.EE
+.RE
+.TP
+Type a file with realistic errors:
+.RS
+.EX
+cat essay.txt | htype --wpm 120 --error-rate 0.05
+.EE
+.RE
+.TP
+Chain with other tools:
+.RS
+.EX
+cat script.txt | htype --wpm 100 | tee output.txt
+.EE
+.RE
+.SH NOTES
+Output is pipe\-friendly. The error correction sequence is
+\fBwrong_char\fR, \fB\\b \\b\fR, \fBcorrect_char\fR \(em one keystroke
+delay at each step.
+.SH BUGS
+Report bugs at https://github.com/lord-of-the-strings/htype
+.SH AUTHOR
+Written by Aadity Setu.
