@@ -11,7 +11,7 @@ MAN1    = htype.1
 all: $(BINARY)
 
 $(BINARY): $(SRC)
-	$(CC) $(CFLAGS) -o $@ $
+	$(CC) $(CFLAGS) -o $@ $<
 
 debug: $(SRC)
 	$(CC) $(DBGFLAGS) -o $(BINARY)-debug $
