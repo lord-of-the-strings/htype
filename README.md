@@ -51,8 +51,11 @@ cat script.txt | htype --wpm 100 | tee output.txt
 
 - [x] Stage 1 — WPM timing
 - [x] Stage 2 — Error injection
-- [ ] Stage 3 — Confidence / rhythm
+- [x] Stage 3 — Confidence / rhythm
 - [ ] Stage 4 — Advanced humanization (open-ended)
+
+## Note
+Added improved debugging support. If you can't find a sample.txt use the licence as sample, sample.txt is under careful development.
 
 ## License
 
