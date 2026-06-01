@@ -1,5 +1,5 @@
 CC      = gcc
-CFLAGS  = -O2 -Wall -Wextra
+CFLAGS  = -O2 -Wall -Wextra -lm
 DBGFLAGS= -g -O0 -Wall -Wextra -DDEBUG
 PREFIX  = /usr/local
 BINARY  = htype
