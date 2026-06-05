@@ -35,7 +35,7 @@ htype [--wpm N] [--error-rate F]
 | Flag | Default | Description |
 |------|---------|-------------|
 | `--wpm N` | 120 | Typing speed in words per minute |
-| `--error-rate F` | 0.0 | Mistype probability per letter (0.0–1.0) |
+| `--error F` | 0.0 | Mistype probability per letter (0.0–1.0) |
 | `--help`| N/A | Standard help function |
 | `--jitter` | 0.0 | Amount of "jitter" to add ie the probability of a different speed for a particular letter (human inconsistency) |
 | `--debug-timing` | 0 | Boolean flag to enable debugging logs of letter timing |
