@@ -83,7 +83,7 @@ The name "hinject-wayland" signifies that it is compatible with Wayland's advanc
 ## Future Plans
 - Deployment to a custom web application using hinject bot
 - Making hinject bot send keystrokes so that it becomes difficult to detect that it is a bot
-- 
+  
 ## License
 
 MIT
