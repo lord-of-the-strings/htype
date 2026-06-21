@@ -72,6 +72,13 @@ hinject is an automation for htype.
 - It automatically initializes and runs the htype bot as a child process, intercepts stdout, and writes the output in real time to an online text box.
 - For the automation, hinject uses monkeytype in Firefox, automated using selenium. The hinject bot launches firefox, waits for monkeytype to load, enters zen mode and types out.
 
+To use the hinject bot, run it in your favorite terminal emulator:
+```bash
+python hinject-wayland.py
+```
+
+The name "hinject-wayland" signifies that it is compatible with Wayland's advanced security protocols and hence has been retained despite its origins being in development plans.
+
 ---------------
 ## Future Plans
 - Deployment to a custom web application using hinject bot
