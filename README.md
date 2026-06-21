@@ -72,7 +72,7 @@ hinject is an automation for htype.
 - It automatically initializes and runs the htype bot as a child process, intercepts stdout, and writes the output in real time to an online text box.
 - For the automation, hinject uses monkeytype in Firefox, automated using selenium. The hinject bot launches firefox, waits for monkeytype to load, enters zen mode and types out.
 
-
+---------------
 ##Future Plans
 - Deployment to a custom web application using hinject bot
 - Making hinject bot send keystrokes so that it becomes difficult to detect that it is a bot
