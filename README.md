@@ -1,9 +1,9 @@
-# htype
+# htype and hinject typing bots
 
-Mimic human typing on stdout.
+Mimic human typing - now with hardcoded automation
 
 Reads from stdin, writes to stdout one character at a time with
-configurable speed and error injection.
+configurable speed and error injection
 
 ## Build
 
@@ -66,8 +66,16 @@ cat script.txt | htype --wpm 100 | tee output.txt
   #OR
   paru -S htype
   ```
-- PLANNED: web app and other platforms
+## Introducing the hinject bot
+hinject is an automation for htype. 
+- It provides a neat TUI made using InquirerPy.
+- It automatically initializes and runs the htype bot as a child process, intercepts stdout, and writes the output in real time to an online text box.
+- For the automation, hinject uses monkeytype in Firefox, automated using selenium. The hinject bot launches firefox, waits for monkeytype to load, enters zen mode and types out.
 
+##Future Plans
+- Deployment to a custom web application using hinject bot
+- Making hinject bot send keystrokes so that it becomes difficult to detect that it is a bot
+- 
 ## License
 
 MIT
