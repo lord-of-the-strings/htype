@@ -153,5 +153,6 @@ A browser extension target for injecting synthetic `keydown` / `keyup` / `keypre
 
 ---
 
+### License
 
 MIT. See [LICENSE](LICENSE).
